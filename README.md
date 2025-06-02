@@ -74,29 +74,29 @@ Copy
 Edit
 python scripts/target_recognition.py
 ```
-🧠 Models
+##🧠 Models
 yolov8n.pt — Lightweight YOLOv8 model
 yolo11l.pt — Custom-trained model for high-accuracy object detection
 
 ✅ You can swap out models in the script to suit performance/accuracy needs.
 
-🧰 Tech Stack
+##🧰 Tech Stack
 Python 3.10
 OpenCV for video processing
 YOLOv8 / Custom YOLO11L (via PyTorch)
 SQLite for threat logging
 Ultralytics for model support
 
-📄 Documentation
+##📄 Documentation
 Find all reports, presentation decks, and research materials in the /Documentations folder.
 
-👨‍💻 Author
+##👨‍💻 Author
 Sujan S
 🎓 SRM Institute of Science and Technology
 📧 [sujans1411@gmail.com.com]
 🔗 [Portfoli](https://wolfieexd.github.io/portfolio/)
 
-📌 License
+##📌 License
 This project is intended for academic and research purposes. For commercial use, please contact the author.
 
 ⚠️ Ensure your system has a GPU for better performance during detection. This system is built for prototype and educational demonstrations.
