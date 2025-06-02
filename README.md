@@ -91,10 +91,10 @@ Ultralytics for model support
 Find all reports, presentation decks, and research materials in the /Documentations folder.
 
 ## 👨‍💻 Author
-Sujan S
+- Sujan S
 🎓 SRM Institute of Science and Technology
 📧 [sujans1411@gmail.com.com]
-🔗 [Portfoli](https://wolfieexd.github.io/portfolio/)
+🔗 [Portfolio](https://wolfieexd.github.io/portfolio/)
 
 ## 📌 License
 This project is intended for academic and research purposes. For commercial use, please contact the author.
