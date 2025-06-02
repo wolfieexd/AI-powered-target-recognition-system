@@ -55,7 +55,7 @@ AI-Powered Target Recognition System/
 
 Clone the repository:
 ```bash
-[git clone https://github.com/wolfieexd/AI-powered-target-recognition-system
+git clone https://github.com/wolfieexd/AI-powered-target-recognition-system
 cd AI-powered-target-recognition-system
 
 Install the required Python packages:
