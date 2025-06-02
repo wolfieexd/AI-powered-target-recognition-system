@@ -32,19 +32,20 @@ An **AI-powered real-time surveillance system** that detects and recognizes pote
 
 ## 🗂 Folder Structure
 
+```
 AI-Powered Target Recognition System/
 ├── detections.db # SQLite database
 ├── error.log # Log file
 ├── Requirement.txt # Dependencies
 ├── models/
-│ ├── yolo11l.pt # Custom YOLOv11 model
-│ └── yolov8n.pt # YOLOv8 nano model
+    ├── yolo11l.pt # Custom YOLOv11 model
+    └── yolov8n.pt # YOLOv8 nano model
 ├── scripts/
-│ └── target_recognition.py # Core detection script
+    └── target_recognition.py # Core detection script
 ├── Documentations/
-│ ├── *.pptx # Project presentations
-│ └── *.pdf # Final documentation
-└── README.md # Project readme
+    ├── *.pptx # Project presentations
+    └── *.pdf # Final documentation
+```
 
 yaml
 Copy
