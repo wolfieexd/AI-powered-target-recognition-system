@@ -88,12 +88,9 @@ Find all reports, presentation decks, and research materials in the /Documentati
 
 ## 👨‍💻 Author
 
-Sujan S
-
-🎓 SRM Institute of Science and Technology
-
-📧 [sujans1411@gmail.com.com]
-
+Sujan S  
+🎓 SRM Institute of Science and Technology  
+📧 [sujans1411@gmail.com.com]  
 🔗 [Portfolio](https://wolfieexd.github.io/portfolio/)
 
 ## 📌 License
