@@ -96,4 +96,4 @@ Sujan S
 ## 📌 License
 This project is intended for academic and research purposes. For commercial use, please contact the author.
 
-⚠️ Ensure your system has a GPU for better performance during detection. This system is built for prototype and educational demonstrations.
+## ⚠️ Ensure your system has a GPU for better performance during detection. This system is built for prototype and educational demonstrations.
