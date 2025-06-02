@@ -58,8 +58,8 @@ Edit
 
 Clone the repository:
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+[git clone https://github.com/wolfieexd/AI-powered-target-recognition-system
+cd AI-powered-target-recognition-system
 
 Install the required Python packages:
 bash
@@ -72,7 +72,7 @@ bash
 Copy
 Edit
 python scripts/target_recognition.py
-
+```
 🧠 Models
 yolov8n.pt — Lightweight YOLOv8 model
 yolo11l.pt — Custom-trained model for high-accuracy object detection
