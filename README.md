@@ -47,10 +47,6 @@ AI-Powered Target Recognition System/
     └── *.pdf # Final documentation
 ```
 
-yaml
-Copy
-Edit
-
 ---
 
 ## ⚙️ Installation
@@ -91,9 +87,13 @@ Ultralytics for model support
 Find all reports, presentation decks, and research materials in the /Documentations folder.
 
 ## 👨‍💻 Author
-- Sujan S
+
+Sujan S
+
 🎓 SRM Institute of Science and Technology
+
 📧 [sujans1411@gmail.com.com]
+
 🔗 [Portfolio](https://wolfieexd.github.io/portfolio/)
 
 ## 📌 License
