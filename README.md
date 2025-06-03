@@ -38,11 +38,11 @@ AI-Powered Target Recognition System/
 ├── error.log # Log file
 ├── Requirement.txt # Dependencies
 ├── models/
-    ├── yolo11l.pt # Custom YOLOv11 model
-    └── yolov8n.pt # YOLOv8 nano model
+|   ├── yolo11l.pt # Custom YOLOv11 model
+|   └── yolov8n.pt # YOLOv8 nano model
 ├── scripts/
-    └── target_recognition.py # Core detection script
-├── Documentations/
+|   └── target_recognition.py # Core detection script
+└── Documentations/
     ├── *.pptx # Project presentations
     └── *.pdf # Final documentation
 ```
