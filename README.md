@@ -90,7 +90,7 @@ Find all reports, presentation decks, and research materials in the /Documentati
 
 Sujan S  
 🎓 SRM Institute of Science and Technology  
-📧 [sujans1411@gmail.com.com]  
+📧 [sujans1411@gmail.com]  
 🔗 [Portfolio](https://wolfieexd.github.io/portfolio/)
 
 ## 📌 License
