@@ -12,8 +12,8 @@ An **AI-powered real-time surveillance system** that detects and recognizes pote
 ## 🎥 Sample Detection (JPEG Preview)
 
 <p align="center">
-  <img src="https://drive.google.com/file/d/1cjxlxXJT7aJ4ET3YspEH1e5bIa0LHkfu/view?usp=sharing" width="600"/>
-</p>
+  ![Picture1](https://github.com/user-attachments/assets/0e08a796-2036-4bc9-a254-0aa11f4ad720)
+>
 
 > *Above: The system detects and highlights objects like people or weapons in real-time.*
 
