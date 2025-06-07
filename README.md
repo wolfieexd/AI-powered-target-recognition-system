@@ -9,7 +9,7 @@ An **AI-powered real-time surveillance system** that detects and recognizes pote
 
 ---
 
-## 🎥 Sample Detection (JPEG Preview)
+## 🎥 Sample Detection (JPG Preview)
 
 <p align="center">
   <img src="https://github.com/wolfieexd/AI-powered-target-recognition-system/blob/main/Picture1.jpg?raw=true" alt="Picture1" />
