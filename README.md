@@ -43,7 +43,7 @@ AI-Powered Target Recognition System/
 ├── scripts/
 |   └── target_recognition.py # Core detection script
 └── Documentations/
-    ├── *.pptx # Project presentations
+    ├── *.pptx # Project presentation
     └── *.pdf # Final documentation
 ```
 
