@@ -57,17 +57,15 @@ Clone the repository:
 ```bash
 git clone https://github.com/wolfieexd/AI-powered-target-recognition-system
 cd AI-powered-target-recognition-system
+```
 
 Install the required Python packages:
-bash
-Copy
-Edit
+```bash
 pip install -r Requirement.txt
+```
 
 Run the detection system:
-bash
-Copy
-Edit
+```bash
 python scripts/target_recognition.py
 ```
 ## 🧠 Models
