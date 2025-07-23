@@ -69,17 +69,17 @@ Run the detection system:
 python scripts/target_recognition.py
 ```
 ## 🧠 Models
-yolov8n.pt — Lightweight YOLOv8 model
+yolov8n.pt — Lightweight YOLOv8 model  
 yolo11l.pt — Custom-trained model for high-accuracy object detection
 
 ✅ You can swap out models in the script to suit performance/accuracy needs.
 
 ## 🧰 Tech Stack
-Python 3.10
-OpenCV for video processing
-YOLOv8 / Custom YOLO11L (via PyTorch)
-SQLite for threat logging
-Ultralytics for model support
+Python 3.10  
+OpenCV for video processing   
+YOLOv8 / Custom YOLO11L (via PyTorch)  
+SQLite for threat logging  
+Ultralytics for model support  
 
 ## 📄 Documentation
 Find all reports, presentation decks, and research materials in the /Documentations folder.
