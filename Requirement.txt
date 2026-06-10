@@ -1,6 +1,0 @@
-opencv-python
-numpy
-ultralytics
-Pillow
-tkinter
-sqlite3

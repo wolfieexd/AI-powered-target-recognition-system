@@ -36,12 +36,12 @@ An **AI-powered real-time surveillance system** that detects and recognizes pote
 AI-Powered Target Recognition System/
 ├── detections.db # SQLite database
 ├── error.log # Log file
-├── Requirement.txt # Dependencies
+├── Requirements.txt # Dependencies
 ├── models/
 |   ├── yolo11l.pt # Custom YOLOv11 model
 |   └── yolov8n.pt # YOLOv8 nano model
-├── scripts/
-|   └── target_recognition.py # Core detection script
+├── main_dashboard.py # Core interactive UI and dashboard
+├── file_weapon_detector.py # File analysis and active suspects tracking
 └── Documentations/
     ├── *.pptx # Project presentation
     └── *.pdf # Final documentation
@@ -61,12 +61,12 @@ cd AI-powered-target-recognition-system
 
 Install the required Python packages:
 ```bash
-pip install -r Requirement.txt
+pip install -r Requirements.txt
 ```
 
-Run the detection system:
+Run the detection system dashboard:
 ```bash
-python scripts/target_recognition.py
+python main_dashboard.py
 ```
 ## 🧠 Models
 yolov8n.pt — Lightweight YOLOv8 model  
