@@ -1,0 +1,39 @@
+{
+    "model_path": "models/weapon_model.pt",
+    "detection_threshold": 0.5483740522325189,
+    "camera_sources": [
+        "0",
+        "1",
+        "2"
+    ],
+    "database_path": "detections.db",
+    "output_directory": "output",
+    "log_path": "logs/weapon_surveillance.log",
+    "weapon_classes": [
+        "guns",
+        "knife"
+    ],
+    "alert_threshold": 0.6,
+    "alerts_enabled": true,
+    "whatsapp_enabled": false,
+    "whatsapp_number": "+1234567890",
+    "process_every_n_frames": 2,
+    "intrusion_zone": [
+        [
+            492,
+            100
+        ],
+        [
+            503,
+            346
+        ],
+        [
+            635,
+            341
+        ],
+        [
+            636,
+            92
+        ]
+    ]
+}

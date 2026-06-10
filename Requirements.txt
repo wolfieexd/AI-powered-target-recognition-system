@@ -1,0 +1,7 @@
+opencv-python==4.9.0.80
+numpy==1.26.4
+ultralytics==8.2.2
+pillow==10.2.0
+psutil==5.9.8
+pywhatkit>=5.4
+twilio>=8.5.0

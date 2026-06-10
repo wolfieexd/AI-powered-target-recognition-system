@@ -1,0 +1,38 @@
+# Environments
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Models and heavy data
+models/
+runs/
+*.pt
+*.onnx
+*.weights
+*.h5
+
+# Logs and outputs
+logs/
+output/
+recordings/
+*.log
+detections.db
+*.db
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+.qodo/
+
+# Project specific
+Weapon-2-2/
