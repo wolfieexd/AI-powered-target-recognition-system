@@ -819,12 +819,19 @@ class FileWeaponDetector:
                 use_tta = False  # Force standard detection
             
             # Option D: Standard single-pass detection (default or fallback)
+            # This is the primary detection pipeline used when Tiled/Multiscale are disabled.
+            # It passes the entire raw image frame into the YOLOv8 neural network.
             if not use_tiled and not use_multiscale:
                 logging.info("⚡ Using Standard Detection...")
+                
+                # Core Detection Inference Step
+                # The model() call handles everything: resizing to 640x640, normalizing pixels,
+                # passing through the network layers, and extracting bounding boxes.
                 results = self.model(
                     frame,
-                    conf=dynamic_threshold,
-                    iou=0.30,
+                    conf=dynamic_threshold,  # Minimum confidence threshold (e.g. 0.45 = 45% certainty)
+                    iou=0.30,                # Intersection over Union threshold for Non-Max Suppression (NMS) to merge overlapping duplicate boxes
+
                     imgsz=640,
                     device=self.device,
                     half=torch.cuda.is_available(),
@@ -869,13 +876,21 @@ class FileWeaponDetector:
                 
                 logging.info(f"  - Detected: {obj_class} (confidence: {conf:.3f})")
                 
+                # Basic Classification Step
+                # The YOLO network outputs an integer class ID (e.g., 0 for person, 1 for guns).
+                # We map this ID to a string name via `result.names`, yielding `obj_class`.
+                # We then strictly classify if this detected object represents a localized threat 
+                # by checking it against our known WEAPON_CLASSES list.
                 is_weapon = obj_class.lower() in WEAPON_CLASSES
                 
                 if is_weapon:
                     logging.info(f"    ⚠️ WEAPON DETECTED: {obj_class}")
                     weapons_found += 1
+
                     
                     # Cinematic Suspects Tracking Logic
+                    # If a weapon is detected, we need to find out WHO is holding it.
+                    # We run a secondary generic YOLO model specifically to find "person" bounding boxes (class 0).
                     if hasattr(self, 'generic_model') and self.generic_model is not None:
                         person_results = self.generic_model.predict(original_frame, conf=0.2, classes=[0], verbose=False)
                         h, w = original_frame.shape[:2]
@@ -883,11 +898,17 @@ class FileWeaponDetector:
                         for p_res in person_results:
                             if p_res.boxes is not None and len(p_res.boxes) > 0:
                                 for p_box in p_res.boxes:
+                                    # Extract coordinates for the detected person
                                     px1, py1, px2, py2 = p_box.xyxy[0].cpu().numpy().astype(int)
-                                    # Expand person box by 100 pixels in all directions to catch weapons held in hands
+                                    
+                                    # Heuristic Spatial Intersection 
+                                    # People often hold weapons outside the strict boundaries of their torso bounding box.
+                                    # We artificially expand the person's bounding box outward by a 100-pixel margin
+                                    # to reliably encapsulate hands and extended arms holding the weapon.
                                     margin = 100
                                     epx1, epy1 = px1 - margin, py1 - margin
                                     epx2, epy2 = px2 + margin, py2 + margin
+
                                     
                                     wx_c, wy_c = (x1 + x2) / 2, (y1 + y2) / 2
                                     if (epx1 <= wx_c <= epx2) and (epy1 <= wy_c <= epy2) or (
